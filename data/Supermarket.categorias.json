@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "67ca7156b4f31836ce51dec2"
+  },
+  "nombre": "General",
+  "descripcion": "Categoría por defecto",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-07T04:08:54.967Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T04:08:54.967Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67ca825275ffac44cafb1205"
+  },
+  "nombre": "Electrónica",
+  "descripcion": "Tecnología es la categoria",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-07T05:21:22.769Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T05:28:13.996Z"
+  }
+}]
