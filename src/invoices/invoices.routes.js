@@ -1,10 +1,9 @@
 import { Router } from "express";
-import { historialFactura, actualizarFactura } from "./invoices.controller.js";
-import { validarFactura } from "../middlewares/factura-validate.js";
+import { historialFactura } from "./invoices.controller.js"
+import { validarFactura } from "../middlewares/factura-validate.js"
 
-const router = Router();
+const router = Router()
 
-router.get("/historialFactura", validarFactura, historialFactura);
-router.put("/actualizarFactura/:id", validarFactura, actualizarFactura);
+router.get("/historialFactura", validarFactura, historialFactura)
 
 export default router;
