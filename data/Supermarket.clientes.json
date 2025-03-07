@@ -1,0 +1,79 @@
+[{
+  "_id": {
+    "$oid": "67c911e44ef7085a5187fda5"
+  },
+  "nombre": "Juan",
+  "apellido": "Pérez",
+  "email": "juan.perez@example.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$3BpKGg9vJjH7OmARmcP4hQ$kUcNS/OFBFS2Y82TL5uu9MTeSDxZSOAu33V5CgGnbgs",
+  "rol": "CLIENTE",
+  "direccion": "Calle Falsa 123",
+  "telefono": "1234567890",
+  "status": true,
+  "creadoEn": {
+    "$date": "2025-03-06T03:09:24.210Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T02:57:37.479Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c92a4f3fb830a1da59304d"
+  },
+  "nombre": "Admin",
+  "apellido": "User",
+  "email": "admin@example.com",
+  "password": "Adminpassword123",
+  "rol": "CLIENTE",
+  "direccion": "zona 7",
+  "telefono": "12345678",
+  "status": true,
+  "creadoEn": {
+    "$date": "2025-03-06T04:53:35.186Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c9367b2ac5aef2a5240f4e"
+  },
+  "nombre": "Admin",
+  "apellido": "User",
+  "email": "admins@example.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$eevRxO3Ere2FLl3KixpSZw$/JlfzUHp4rCpVQ582MOJNKFN1/D5CAvYRZZNfmjnkZc",
+  "role": "ADMIN",
+  "direccion": "zona 7",
+  "telefono": "12345678",
+  "status": true,
+  "creadoEn": {
+    "$date": "2025-03-06T05:45:31.058Z"
+  },
+  "createdAt": {
+    "$date": "2025-03-06T05:45:31.058Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-06T05:45:31.058Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67ca5c9d338f1f4098044be4"
+  },
+  "nombre": "Juan",
+  "apellido": "Pérez",
+  "email": "juana.pereza@example.com",
+  "password": "Password123++",
+  "role": "CLIENTE",
+  "direccion": "Calle Falsa 123",
+  "telefono": "1234567890",
+  "status": false,
+  "creadoEn": {
+    "$date": "2025-03-07T02:40:29.381Z"
+  },
+  "createdAt": {
+    "$date": "2025-03-07T02:40:29.385Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T03:07:41.029Z"
+  }
+}]

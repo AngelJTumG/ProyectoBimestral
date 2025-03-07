@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "67cab6ceacc95a10d002ccca"
+  },
+  "usuarioId": {
+    "$oid": "67c9367b2ac5aef2a5240f4e"
+  },
+  "productos": [
+    {
+      "productoId": {
+        "$oid": "67ca95876f5243823bbdbfff"
+      },
+      "cantidad": 5,
+      "_id": {
+        "$oid": "67caafdc4f76898e749bc6c9"
+      }
+    }
+  ],
+  "total": 750,
+  "metodoPago": {
+    "nombreTarjeta": "Nombre del titular",
+    "numeroTarjeta": "1234567812345678",
+    "fechaExpiracion": "12/25",
+    "cvv": "123"
+  },
+  "fecha": {
+    "$date": "2025-03-07T09:05:18.336Z"
+  },
+  "__v": 0
+}]
