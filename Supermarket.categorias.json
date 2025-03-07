@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "67caf22a10b6818b5562049d"
+  },
+  "nombre": "General",
+  "descripcion": "Categoría por defecto",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-07T13:18:34.680Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T13:18:34.680Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67cb1c9a2b6c7217d36da5df"
+  },
+  "nombre": "Alimentos",
+  "descripcion": "Comida es la categoria",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-07T16:19:38.571Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T16:22:04.314Z"
+  }
+}]

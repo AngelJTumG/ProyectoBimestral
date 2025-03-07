@@ -1,0 +1,884 @@
+{
+	"info": {
+		"_postman_id": "a4ec8551-1075-4ed8-bb62-add61ad795dd",
+		"name": "Supermercado",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42926224"
+	},
+	"item": [
+		{
+			"name": "Register/Login",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Angel\",\r\n  \"apellido\": \"Tum\",\r\n  \"email\": \"angel.tum@example.com\",\r\n  \"password\": \"Password123+\",\r\n  \"direccion\": \"Calle Falsa 123\",\r\n  \"telefono\": \"1234567890\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/supermercado/v1/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"supermercado",
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"angel.tum@example.com\",\r\n    \"password\": \"Password123+\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/supermercado/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"supermercado",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login Admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin@example.com\",\r\n    \"password\": \"Adminpassword123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/supermercado/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"supermercado",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "actualizarContraseña",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2NiMGZhNjg3MmU3OWI5OWM1ZjY2ZDIiLCJpYXQiOjE3NDEzNjEwOTUsImV4cCI6MTc0MTM2NDY5NX0.Sp5OHNToA19088rTClLna8weR3Ng4bh_1WgwJc2GYVI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"newPassword\": \"Admin123++\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/supermercado/v1/cliente/updatePassword/67cb0fa6872e79b99c5f66d2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"supermercado",
+								"v1",
+								"cliente",
+								"updatePassword",
+								"67cb0fa6872e79b99c5f66d2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ClienteID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2NiMGZhNjg3MmU3OWI5OWM1ZjY2ZDIiLCJpYXQiOjE3NDEzNjEwOTUsImV4cCI6MTc0MTM2NDY5NX0.Sp5OHNToA19088rTClLna8weR3Ng4bh_1WgwJc2GYVI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/supermercado/v1/cliente/findCliente/67ca5c9d338f1f4098044be4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"supermercado",
+								"v1",
+								"cliente",
+								"findCliente",
+								"67ca5c9d338f1f4098044be4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getClientes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2NiMGZhNjg3MmU3OWI5OWM1ZjY2ZDIiLCJpYXQiOjE3NDEzNjEwOTUsImV4cCI6MTc0MTM2NDY5NX0.Sp5OHNToA19088rTClLna8weR3Ng4bh_1WgwJc2GYVI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/supermercado/v1/cliente/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"supermercado",
+								"v1",
+								"cliente",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarClIENTE",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M5MzY3YjJhYzVhZWYyYTUyNDBmNGUiLCJpYXQiOjE3NDEzNjEzMDIsImV4cCI6MTc0MTM2NDkwMn0.POOwQisLnQv4vzb9ssvt_4l_bh7UlwBH7fuB8DjccPQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/supermercado/v1/cliente/deleteCliente/67c9367b2ac5aef2a5240f4e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"supermercado",
+								"v1",
+								"cliente",
+								"deleteCliente",
+								"67c9367b2ac5aef2a5240f4e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateCliente",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2NhZjIyYTEwYjY4MThiNTU2MjA0OWEiLCJpYXQiOjE3NDEzNjQwMTMsImV4cCI6MTc0MTM2NzYxM30._lLqy1R0b3EN_2txHFoEUhoECNDaYnREVxaMWmuB0ik",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Diego\",\r\n  \"apellido\": \"Lopez\",\r\n  \"email\": \"diego.lopez@example.com\",\r\n  \"password\": \"Password123++\",\r\n  \"direccion\": \"Calle Falsa 123\",\r\n  \"telefono\": \"1234567890\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/supermercado/v1/cliente/updateCliente/67cb0fa6872e79b99c5f66d2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"supermercado",
+								"v1",
+								"cliente",
+								"updateCliente",
+								"67cb0fa6872e79b99c5f66d2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RolUpdate",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"rol\": \"ADMIN\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/supermercado/v1/cliente/updateRol/67ca5c9d338f1f4098044be4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"supermercado",
+								"v1",
+								"cliente",
+								"updateRol",
+								"67ca5c9d338f1f4098044be4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "addCategoria",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2NhZjIyYTEwYjY4MThiNTU2MjA0OWEiLCJpYXQiOjE3NDEzNjQwMTMsImV4cCI6MTc0MTM2NzYxM30._lLqy1R0b3EN_2txHFoEUhoECNDaYnREVxaMWmuB0ik",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Alimentos\",\r\n  \"descripcion\": \"Comida enlatados etc\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/supermercado/v1/categoria/addCategory",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"supermercado",
+								"v1",
+								"categoria",
+								"addCategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCategory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/supermercado/v1/categoria/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"supermercado",
+								"v1",
+								"categoria",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizarDescripcion",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2NhZjIyYTEwYjY4MThiNTU2MjA0OWEiLCJpYXQiOjE3NDEzNjQwMTMsImV4cCI6MTc0MTM2NzYxM30._lLqy1R0b3EN_2txHFoEUhoECNDaYnREVxaMWmuB0ik",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"descripcion\": \"Comida es la categoria \"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/supermercado/v1/categoria/updateCategory/67cb1c9a2b6c7217d36da5df",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"supermercado",
+								"v1",
+								"categoria",
+								"updateCategory",
+								"67cb1c9a2b6c7217d36da5df"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteCategory",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2NhZjIyYTEwYjY4MThiNTU2MjA0OWEiLCJpYXQiOjE3NDEzNjQwMTMsImV4cCI6MTc0MTM2NzYxM30._lLqy1R0b3EN_2txHFoEUhoECNDaYnREVxaMWmuB0ik",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/supermercado/v1/categoria/deleteCategory/67ca825275ffac44cafb1205",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"supermercado",
+								"v1",
+								"categoria",
+								"deleteCategory",
+								"67ca825275ffac44cafb1205"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Productos",
+			"item": [
+				{
+					"name": "AddProduct",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2NhZjIyYTEwYjY4MThiNTU2MjA0OWEiLCJpYXQiOjE3NDEzNjQwMTMsImV4cCI6MTc0MTM2NzYxM30._lLqy1R0b3EN_2txHFoEUhoECNDaYnREVxaMWmuB0ik",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombrePro\": \"Leche\",\r\n    \"descripcion\": \"Lacteo descremado \",\r\n    \"precio\": 100.0,\r\n    \"stock\": 50,\r\n    \"category\": \"67cb1c9a2b6c7217d36da5df\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/supermercado/v1/producto/addProduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"supermercado",
+								"v1",
+								"producto",
+								"addProduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscarNombre",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M5MzY3YjJhYzVhZWYyYTUyNDBmNGUiLCJpYXQiOjE3NDEzMzAwMTcsImV4cCI6MTc0MTMzMzYxN30.JX3tBysMQIySPyCBpBCy4x5gIAaH0e83a_O1a3G02_A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/supermercado/v1/producto/findProduct/Leche",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"supermercado",
+								"v1",
+								"producto",
+								"findProduct",
+								"Leche"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetProduct",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/supermercado/v1/producto/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"supermercado",
+								"v1",
+								"producto",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CategoriaProducto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/supermercado/v1/producto/category/67cb1c9a2b6c7217d36da5df",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"supermercado",
+								"v1",
+								"producto",
+								"category",
+								"67cb1c9a2b6c7217d36da5df"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agotado",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/supermercado/v1/producto/soldOut/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"supermercado",
+								"v1",
+								"producto",
+								"soldOut",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActualizarProdcuto",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2NhZjIyYTEwYjY4MThiNTU2MjA0OWEiLCJpYXQiOjE3NDEzNjQwMTMsImV4cCI6MTc0MTM2NzYxM30._lLqy1R0b3EN_2txHFoEUhoECNDaYnREVxaMWmuB0ik",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombrePro\": \"Carne\",\r\n    \"descripcion\": \"todo tipo de carnes \",\r\n    \"precio\": 150.00,\r\n    \"stock\": 20,\r\n    \"category\": \"67cb1c9a2b6c7217d36da5df\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/supermercado/v1/producto/updateProduct/67ca95876f5243823bbdbfff",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"supermercado",
+								"v1",
+								"producto",
+								"updateProduct",
+								"67ca95876f5243823bbdbfff"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MasVendidos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/supermercado/v1/producto/topSellingProducts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"supermercado",
+								"v1",
+								"producto",
+								"topSellingProducts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminarProducto",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M5MzY3YjJhYzVhZWYyYTUyNDBmNGUiLCJpYXQiOjE3NDEzMzI1NDEsImV4cCI6MTc0MTMzNjE0MX0.MaRKSBPwMju7OGX8eESIaBhwdNxkANS2Ww2LrE6uiuQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/supermercado/v1/producto/deleteProduct/67ca9ceba7378bdde7631f79",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"supermercado",
+								"v1",
+								"producto",
+								"deleteProduct",
+								"67ca9ceba7378bdde7631f79"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Carrito",
+			"item": [
+				{
+					"name": "Agregar Carrito",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2NhZjIyYTEwYjY4MThiNTU2MjA0OWEiLCJpYXQiOjE3NDEzNjQwMTMsImV4cCI6MTc0MTM2NzYxM30._lLqy1R0b3EN_2txHFoEUhoECNDaYnREVxaMWmuB0ik",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"productos\": [\r\n    {\r\n      \"productoId\": \"67ca95876f5243823bbdbfff\",\r\n      \"cantidad\": 1\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/supermercado/v1/carrito/agregarCarrito",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"supermercado",
+								"v1",
+								"carrito",
+								"agregarCarrito"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VerCarrito",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2NhZjIyYTEwYjY4MThiNTU2MjA0OWEiLCJpYXQiOjE3NDEzNjQwMTMsImV4cCI6MTc0MTM2NzYxM30._lLqy1R0b3EN_2txHFoEUhoECNDaYnREVxaMWmuB0ik",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/supermercado/v1/carrito/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"supermercado",
+								"v1",
+								"carrito",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Comprar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2NhZjIyYTEwYjY4MThiNTU2MjA0OWEiLCJpYXQiOjE3NDEzNjQwMTMsImV4cCI6MTc0MTM2NzYxM30._lLqy1R0b3EN_2txHFoEUhoECNDaYnREVxaMWmuB0ik",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombreTarjeta\": \"Nombre del titular\",\r\n  \"numeroTarjeta\": \"1234567812345678\",\r\n  \"fechaExpiracion\": \"12/25\",\r\n  \"cvv\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/supermercado/v1/carrito/completarCompra/67caf9fb2dad4d94f55d6e67",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"supermercado",
+								"v1",
+								"carrito",
+								"completarCompra",
+								"67caf9fb2dad4d94f55d6e67"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Factura",
+			"item": [
+				{
+					"name": "Factura UsuarioHistorial",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2NhZjIyYTEwYjY4MThiNTU2MjA0OWEiLCJpYXQiOjE3NDEzNjQwMTMsImV4cCI6MTc0MTM2NzYxM30._lLqy1R0b3EN_2txHFoEUhoECNDaYnREVxaMWmuB0ik",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/supermercado/v1/factura/historialFactura/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"supermercado",
+								"v1",
+								"factura",
+								"historialFactura",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
