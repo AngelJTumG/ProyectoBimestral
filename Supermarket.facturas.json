@@ -1,0 +1,180 @@
+[{
+  "_id": {
+    "$oid": "67cab6ceacc95a10d002ccca"
+  },
+  "usuarioId": {
+    "$oid": "67c9367b2ac5aef2a5240f4e"
+  },
+  "productos": [
+    {
+      "productoId": {
+        "$oid": "67ca95876f5243823bbdbfff"
+      },
+      "cantidad": 5,
+      "_id": {
+        "$oid": "67caafdc4f76898e749bc6c9"
+      }
+    }
+  ],
+  "total": 750,
+  "metodoPago": {
+    "nombreTarjeta": "Nombre del titular",
+    "numeroTarjeta": "1234567812345678",
+    "fechaExpiracion": "12/25",
+    "cvv": "123"
+  },
+  "fecha": {
+    "$date": "2025-03-07T09:05:18.336Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67cafb53289aaad67300d099"
+  },
+  "usuarioId": {
+    "$oid": "67c9367b2ac5aef2a5240f4e"
+  },
+  "productos": [
+    {
+      "productoId": {
+        "$oid": "67ca95876f5243823bbdbfff"
+      },
+      "cantidad": 5,
+      "_id": {
+        "$oid": "67cafb53289aaad67300d09a"
+      }
+    }
+  ],
+  "total": 750,
+  "metodoPago": {
+    "nombreTarjeta": "Nombre del titular",
+    "numeroTarjeta": "1234567812345678",
+    "fechaExpiracion": "12/25",
+    "cvv": "123"
+  },
+  "fecha": {
+    "$date": "2025-03-07T13:57:39.098Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67cafcbc60d91dd3163adedb"
+  },
+  "usuarioId": {
+    "$oid": "67c9367b2ac5aef2a5240f4e"
+  },
+  "productos": [
+    {
+      "productoId": {
+        "$oid": "67ca95876f5243823bbdbfff"
+      },
+      "cantidad": 10,
+      "_id": {
+        "$oid": "67cafcbc60d91dd3163adedc"
+      }
+    }
+  ],
+  "total": 1500,
+  "metodoPago": {
+    "nombreTarjeta": "Nombre del titular",
+    "numeroTarjeta": "1234567812345678",
+    "fechaExpiracion": "12/25",
+    "cvv": "123"
+  },
+  "fecha": {
+    "$date": "2025-03-07T14:03:40.385Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67cafdf44c28efc42bbcad41"
+  },
+  "usuarioId": {
+    "$oid": "67c9367b2ac5aef2a5240f4e"
+  },
+  "productos": [
+    {
+      "productoId": {
+        "$oid": "67ca95876f5243823bbdbfff"
+      },
+      "cantidad": 10,
+      "_id": {
+        "$oid": "67cafdf44c28efc42bbcad42"
+      }
+    }
+  ],
+  "total": 1500,
+  "metodoPago": {
+    "nombreTarjeta": "Nombre del titular",
+    "numeroTarjeta": "1234567812345678",
+    "fechaExpiracion": "12/25",
+    "cvv": "123"
+  },
+  "fecha": {
+    "$date": "2025-03-07T14:08:52.901Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67cafe48fe0c68207c4dd572"
+  },
+  "usuarioId": {
+    "$oid": "67c9367b2ac5aef2a5240f4e"
+  },
+  "productos": [
+    {
+      "productoId": {
+        "$oid": "67ca95876f5243823bbdbfff"
+      },
+      "cantidad": 1,
+      "_id": {
+        "$oid": "67cafe48fe0c68207c4dd573"
+      }
+    }
+  ],
+  "total": 150,
+  "metodoPago": {
+    "nombreTarjeta": "Nombre del titular",
+    "numeroTarjeta": "1234567812345678",
+    "fechaExpiracion": "12/25",
+    "cvv": "123"
+  },
+  "fecha": {
+    "$date": "2025-03-07T14:10:16.797Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67cb20002b6c7217d36da60a"
+  },
+  "usuarioId": {
+    "$oid": "67caf22a10b6818b5562049a"
+  },
+  "productos": [
+    {
+      "productoId": {
+        "$oid": "67ca95876f5243823bbdbfff"
+      },
+      "cantidad": 1,
+      "_id": {
+        "$oid": "67cb20002b6c7217d36da60b"
+      }
+    }
+  ],
+  "total": 150,
+  "metodoPago": {
+    "nombreTarjeta": "Nombre del titular",
+    "numeroTarjeta": "1234567812345678",
+    "fechaExpiracion": "12/25",
+    "cvv": "123"
+  },
+  "fecha": {
+    "$date": "2025-03-07T16:34:08.404Z"
+  },
+  "__v": 0
+}]

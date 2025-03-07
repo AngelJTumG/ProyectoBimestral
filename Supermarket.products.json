@@ -1,0 +1,57 @@
+[{
+  "_id": {
+    "$oid": "67ca95876f5243823bbdbfff"
+  },
+  "nombrePro": "Carne",
+  "descripcion": "todo tipo de carnes ",
+  "precio": 150,
+  "stock": 19,
+  "category": {
+    "$oid": "67cb1c9a2b6c7217d36da5df"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-07T06:43:19.462Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T16:34:08.401Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67ca9ceba7378bdde7631f79"
+  },
+  "nombrePro": "Nombre del Producto",
+  "descripcion": "Descripción del producto",
+  "precio": 100,
+  "stock": 50,
+  "category": {
+    "$oid": "67ca7156b4f31836ce51dec2"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-07T07:14:51.377Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T07:14:51.377Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67cb1e092b6c7217d36da5ef"
+  },
+  "nombrePro": "Leche",
+  "descripcion": "Lacteo descremado ",
+  "precio": 100,
+  "stock": 50,
+  "category": {
+    "$oid": "67cb1c9a2b6c7217d36da5df"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-07T16:25:45.616Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T16:25:45.616Z"
+  }
+}]
